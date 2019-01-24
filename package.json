@@ -7,14 +7,14 @@
     "type": "git",
     "url": "git+https://github.com/adamzerella/pkg-dep-tree.git"
   },
+  "scripts": {
+    "test": "mocha __tests__/unit/index.spec.js"
+  },
   "keywords": [
     "tree",
-    "package.json",
-    "module",
+    "package-json",
     "dependencies",
     "dependency",
-    "treeify",
-    "npm",
     "list"
   ],
   "author": "Adam A. Zerella < adam@commandshiftr.co >",
@@ -22,5 +22,12 @@
   "bugs": {
     "url": "https://github.com/adamzerella/pkg-dep-tree/issues"
   },
-  "homepage": "https://github.com/adamzerella/pkg-dep-tree#readme"
+  "homepage": "https://github.com/adamzerella/pkg-dep-tree#readme",
+  "dependencies": {
+    "treeify": "^1.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
 }
