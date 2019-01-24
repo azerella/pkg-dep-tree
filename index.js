@@ -1,17 +1,27 @@
 'use-strict';
+
 const Fsp = require( 'fs' ).promises;
 const Path = require( 'path' );
 
 const Treeify = require ( 'treeify' );
 
-const GetRootDependency = ( object ) => {
 
+const GetRootDependency = ( object ) => {
+    let { name, version } = object;
+    return { [ name ] : version }
 }
+
 
 const GetDependencies = ( object ) => {
-    console.log( object.dependencies );
     return object.dependencies;
 }
+const GetDevDependencies = ( object ) => {
+    return object.devDependencies;
+}
+const GetPeerDependencies = ( object ) => {
+    return object.peerDependencies;
+}
+
 
 /**
  * Asyncronously return a package.json object given a package.json file
@@ -27,10 +37,3 @@ const ReadPkgFile = async ( filePath ) => {
     let pkgFile = await Fsp.readFile( filePath, 'utf-8' );
     return JSON.parse( pkgFile );
 }
-
-// GetDependencies( await ReadPkgFile( 'package.json' ) );
-
-module.exports.ReadPkgFile = ReadPkgFile;
-
-// ReadPkgFile( 'package.json' );
-// ReadPkgFile( Path.join( __dirname, `package.json` ) );
