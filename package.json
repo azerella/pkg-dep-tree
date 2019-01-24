@@ -1,0 +1,26 @@
+{
+  "name": "pkg-dep-tree",
+  "version": "0.1.0",
+  "description": "A better `npm list`",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamzerella/pkg-dep-tree.git"
+  },
+  "keywords": [
+    "tree",
+    "package.json",
+    "module",
+    "dependencies",
+    "dependency",
+    "treeify",
+    "npm",
+    "list"
+  ],
+  "author": "Adam A. Zerella < adam@commandshiftr.co >",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adamzerella/pkg-dep-tree/issues"
+  },
+  "homepage": "https://github.com/adamzerella/pkg-dep-tree#readme"
+}
