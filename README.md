@@ -38,7 +38,11 @@ const { GetMonoDepTree } = require( 'pkg-dep-tree' );
 
 # Tests
 ```node
+# NPM
 npm test
+
+# Yarn
+yarn test
 ```
 
 # Contributors
