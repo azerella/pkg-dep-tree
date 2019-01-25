@@ -1,5 +1,5 @@
 # pkg-dep-tree
-> A better `npm list`.
+> 🌲 A better `npm list`.
 
 # Install
 ```bash
