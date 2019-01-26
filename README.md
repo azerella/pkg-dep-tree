@@ -1,6 +1,8 @@
 # pkg-dep-tree
 > 🌲 A better `npm list`.
 
+`npm list` is a really useful tool for visualising your dependency tree. It's quite hard to use within your application and focuses on the `node_modules` folder however. `pkg-dep-tree` aims to empwoer developers to print out peer dependency structures given a `package.json` file with support for mono repos.
+
 # Install
 ```bash
 # NPM
@@ -13,13 +15,14 @@ yarn add --dev pkg-dep-tree
 # Usage
 ## Module
 ```javascript
-const { GetMonoDepTree } = require( 'pkg-dep-tree' );
+const { GetMonoDepTree, PrintTree } = require( 'pkg-dep-tree' );
 
 (async () => {
     let workspace = Path.join( __dirname, '/../components' );
     let org = '@gov.au';
-    
-    console.log( await GetMonoDepTree( workspace, 'side-nav', org ) );
+    let treeObject = await GetMonoDepTree( workspace, 'side-nav', org );
+
+    console.log( await PrintTree( treeObject ) );
 })();
 ```
 

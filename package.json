@@ -8,7 +8,7 @@
     "url": "git+https://github.com/adamzerella/pkg-dep-tree.git"
   },
   "scripts": {
-    "test": "mocha __tests__/unit/index.spec.js"
+    "test": "mocha index.spec.js"
   },
   "keywords": [
     "tree",
