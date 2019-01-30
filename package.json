@@ -1,6 +1,6 @@
 {
   "name": "pkg-dep-tree",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "A better `npm list`",
   "main": "index.js",
   "repository": {
@@ -29,5 +29,8 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^5.2.0"
-  }
+  },
+  "files": [
+    "index.js"
+  ]
 }

@@ -15,14 +15,14 @@ yarn add --dev pkg-dep-tree
 # Usage
 ## Module
 ```javascript
-const { GetMonoDepTree, PrintTree } = require( 'pkg-dep-tree' );
+const { GetMonoDepTree, PrintTreeTrim } = require( 'pkg-dep-tree' );
 
 (async () => {
     let workspace = Path.join( __dirname, '/../components' );
     let org = '@gov.au';
     let treeObject = await GetMonoDepTree( workspace, 'side-nav', org );
 
-    console.log( await PrintTree( treeObject ) );
+    console.log( await PrintTreeTrim( treeObject ) );
 })();
 ```
 
