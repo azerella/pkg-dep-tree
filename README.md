@@ -1,7 +1,7 @@
 # pkg-dep-tree
 > 🌲 A better `npm list`.
 
-`npm list` is a really useful tool for visualising your dependency tree. It's quite hard to use within your application and focuses on the `node_modules` folder however. `pkg-dep-tree` aims to empwoer developers to print out peer dependency structures given a `package.json` file with support for mono repos.
+`npm list` is a really useful tool for visualising your dependency tree. It's quite hard to use within your application and focuses on the `node_modules` folder however. `pkg-dep-tree` aims to empwoer developers to print out **peer dependency** structures given a `package.json` file with support for mono repos.
 
 # Install
 ```bash
