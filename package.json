@@ -1,6 +1,6 @@
 {
   "name": "pkg-dep-tree",
-  "version": "0.2.1",
+  "version": "1.2.1",
   "description": "A better `npm list`",
   "main": "index.js",
   "repository": {
@@ -17,7 +17,7 @@
     "dependency",
     "list"
   ],
-  "author": "Adam A. Zerella < adam@commandshiftr.co >",
+  "author": "Adam A. Zerella <adam@commandshiftr.co>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/adamzerella/pkg-dep-tree/issues"
